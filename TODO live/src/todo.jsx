@@ -56,7 +56,7 @@ function Todo() {
             <div className="todolist">
                 <input type="text" value={newTask} onChange={handleInputChange} onKeyPress={handleKeyPress} className="text" />
                 <button className="add" onClick={addTask}>Add</button>
-                <ol>
+                <ol className="list">
                     {tasks.map((tasks, index) =>
                         <li key={index}>
                             <span>{tasks}</span>
