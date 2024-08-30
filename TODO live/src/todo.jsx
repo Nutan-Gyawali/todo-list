@@ -3,6 +3,8 @@ function Todo() {
     const [tasks, setTasks] = useState(["eat", "sleep"]);
     const [newTask, setNewTask] = useState("");
 
+    document.title = "My  Todo List"
+
     function handleInputChange(event) {
         setNewTask(event.target.value);
     }

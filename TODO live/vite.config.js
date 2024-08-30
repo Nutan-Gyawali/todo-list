@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  build: {
+    outDir: 'dist', // Ensure this matches the directory in your deploy script
+  },
+  base: '/todo-list/', // Ensure this matches your GitHub Pages repository name
+});
